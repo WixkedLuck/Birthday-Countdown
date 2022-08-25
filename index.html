@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Countdown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <a class="btn-floating pulse ColorBtn" id="MenuBtn"><i class="material-icons">menu</i></a>
+    <div class="container">
+        <H1>Happy Birthday!!</H1>
+        <h1>Oh...when was it again? I think I got my dates wrong?</h1>
+        <h1>If thats you, rest assured this website is for YOU!</h1>
+        <h1>Just fill out this form and you will never have to remember your birthday or any other again!</h1>
+    </div><br>
+    <div class="center">
+        <a class="btn-floating btn-large waves-effect waves-light ColorBtn modal-trigger" href="#BirthdayInfo"
+            id="BirthdayBtn"><i class="material-icons">add</i></a>
+    </div>
+    <!-- divider -->
+    <br>
+    <div class="divider ColorBtn"></div><br>
+
+    <div class="PageLayout" id="BirthdayContainer">
+        <h1>Tracker Name</h1>
+        <input class="center" type="text" id="fname" name="fname" placeholder="John Doe"><br><br>
+        <h1>Please Select A Date</h1>
+        <input type="text" class="datepicker center" id="DateSelected"><br><br>
+        <button class="btn" id="Submit">Submit</button>
+
+
+    </div>
+    <!-- divider -->
+    <br>
+    <div class="divider ColorBtn"></div>
+    <!-- Tracker info here -->
+    <div class="PageInfo">
+        <div class="PageLayout" id="CreateTracker">
+                <h1 id="TrackerName"></h1>
+            <div class="row">
+            <div class="col s3 font colorFont" id="days"></div>
+            <div class="col s3 font colorFont" id="hours"></div>
+            <div class="col s3 font colorFont" id="mins"></div>
+            <div class="col s3 font colorFont" id="secs"></div>
+        </div>
+        </div>
+        <footer>
+
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- modal trigger by btn -->
+    <div id="BirthdayInfo" class="modal">
+        <div class="modal-content ">
+            <h1>Notice:</h1>
+            <p>The information is saved via local storage. Therefore any information given is not shared with
+                others</p>
+        </div>
+
+        <a class="modal-close ColorBtn btn-floating btn-large" id="Close">Close</a>
+
+    </div>
+
+
+
+
+    <div class="background">
+        <video autoplay loop muted plays-inline class="back">
+            <source src="./Assets/Images/cupcakes.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./Assets/script.js"></script>
+
+</html>
